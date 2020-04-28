@@ -1,0 +1,11 @@
+POST http://localhost:7072/api/TriggerBookVacation HTTP/1.1
+content-type: application/json
+
+{
+	"CityName" : "Singapore",
+	"HotelName" : "Hyatt",
+	"AirlinesName" : "AirAsia"
+}
+###
+
+GET http://localhost:7072/runtime/webhooks/durabletask/instances/6b978b59a7784b57bd3d1ca6283620b6?taskHub=TestHubName&connection=Storage&code=YdGSzMrsMlFWszWDdY4uWajwVLIwj1sg8qgP3HuBaLY7fRLhlYIiRQ==
