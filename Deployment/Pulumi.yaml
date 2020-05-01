@@ -1,0 +1,3 @@
+name: funcDeployment
+runtime: dotnet
+description: Creates and Deploys an azure function

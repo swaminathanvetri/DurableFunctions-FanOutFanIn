@@ -17,4 +17,7 @@
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
   </ItemGroup>
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);Deployment\**\*</DefaultItemExcludes>
+  </PropertyGroup>
 </Project>

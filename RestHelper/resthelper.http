@@ -1,4 +1,4 @@
-POST http://localhost:7072/api/TriggerBookVacation HTTP/1.1
+POST http://localhost:7071/api/TriggerBookVacation HTTP/1.1
 content-type: application/json
 
 {
@@ -8,4 +8,18 @@ content-type: application/json
 }
 ###
 
-GET http://localhost:7072/runtime/webhooks/durabletask/instances/6b978b59a7784b57bd3d1ca6283620b6?taskHub=TestHubName&connection=Storage&code=YdGSzMrsMlFWszWDdY4uWajwVLIwj1sg8qgP3HuBaLY7fRLhlYIiRQ==
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/e0989459165c4dbfa66948087b6b6c72?taskHub=TestHubName&connection=Storage&code=UdxCrIIigcY3n9epHQ0LXYfE1BrlTg9MpaKzAxBSxcEkZPkZKwe7/A==
+
+###
+
+POST https://bdotnet-demo-func5b306a0c.azurewebsites.net/api/TriggerBookVacation Http/1.1
+content-type: application/json
+
+{
+	"CityName" : "Singapore",
+	"HotelName" : "Hyatt",
+	"AirlinesName" : "AirAsia"
+}
+
+###
+GET https://bdotnet-demo-func5b306a0c.azurewebsites.net/runtime/webhooks/durabletask/instances/ba069c4d16624e16b98b438751431b51?taskHub=bdotnetdemofunc5b306a0c&connection=Storage&code=4KEodnzCsEx6st96fWuoaU4oGCYvLC2B6vuxTEf8w2N/Ull5sdmatg==
